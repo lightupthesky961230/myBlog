@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView
 from bookmark.models import Bookmark
 # 북마크 테이블의 전체 레코드 리스트 출력을 위한 뷰
 class BookmarkLV(ListView):
-model = Bookmark
+    model = Bookmark
 # 1) 디폴트 컨텍스트 변수 object_list를 적용
 # 2) 디폴트 템플릿 파일명 소문자모델명_list.html = bookmark_list.html
 # 북마크 테이블의 특정 레코드 상세 출력을 위한 뷰
