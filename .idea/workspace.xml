@@ -37,12 +37,13 @@
       <file leaf-file-name="bookmark_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="496">
+              <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
               <folding>
-                <element signature="e#1535#1807#0" expanded="false" />
-                <element signature="e#2210#2482#0" expanded="false" />
-                <element signature="e#2887#3159#0" expanded="false" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#1562#1834#0" expanded="false" />
+                <element signature="e#2237#2509#0" expanded="false" />
+                <element signature="e#2914#3186#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -326,9 +327,10 @@
         <state relative-caret-position="644">
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <element signature="e#1535#1807#0" expanded="false" />
-            <element signature="e#2210#2482#0" expanded="false" />
-            <element signature="e#2887#3159#0" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1562#1834#0" expanded="false" />
+            <element signature="e#2237#2509#0" expanded="false" />
+            <element signature="e#2914#3186#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -486,9 +488,10 @@
         <state relative-caret-position="644">
           <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <element signature="e#1535#1807#0" expanded="false" />
-            <element signature="e#2210#2482#0" expanded="false" />
-            <element signature="e#2887#3159#0" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1562#1834#0" expanded="false" />
+            <element signature="e#2237#2509#0" expanded="false" />
+            <element signature="e#2914#3186#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -535,16 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding>
-            <element signature="e#314#415#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bookmark/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -575,14 +568,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+          <folding>
+            <element signature="e#314#415#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bookmark/templates/bookmark/bookmark_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="496">
+          <caret line="51" column="34" lean-forward="true" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
           <folding>
-            <element signature="e#1535#1807#0" expanded="false" />
-            <element signature="e#2210#2482#0" expanded="false" />
-            <element signature="e#2887#3159#0" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1562#1834#0" expanded="false" />
+            <element signature="e#2237#2509#0" expanded="false" />
+            <element signature="e#2914#3186#0" expanded="false" />
           </folding>
         </state>
       </provider>
