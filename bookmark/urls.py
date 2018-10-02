@@ -10,3 +10,4 @@ urlpatterns = [
     url(r'^bookmark_t_CBV/$', views.BookmarkLV.as_view(), name='index_t_CBV'),
     url(r'^bookmark_t_FBV/$', views.tabularBookmark, name='index_t_FBV'),
 ]
+
