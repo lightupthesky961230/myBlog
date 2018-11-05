@@ -41,9 +41,8 @@ class Post(models.Model):
     def get_absolute_url(self): # 이 메소드가 정의된 객체를 지칭하는 URL을 반환
         # 아래에서 'blog:post_detail'는 blog 앱 이름공간의 post_detail이란 의미
         # # Example: /post/django-example/
-        # url(r'^post/(?P<slug>[-\w]+)/$', PostDV.as_view(), name='post_detail'),          
+        # url(r'^post/(?P<slug>[-\w]+)/$', PostDV.as_view(), name='post_detail'),
         return reverse('blog:post_detail', args=(self.slug,))
-
     def get_previous_post(self):  # 3.2.5 항에서 템플릿 작성할 때 사용
         return self.get_previous_by_modify_date()
 
