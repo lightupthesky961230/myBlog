@@ -7,14 +7,14 @@ from django.views.generic.dates import ArchiveIndexView, \
 from blog.models import Post
 
 # ListView를 상속받아서 PostLV 작성
-class PostLV(ListView):
+class PostLV(ListView) :
     model = Post
     # 기본값 'blog/post_list.html' 대신 지정 (3.1.4 URL 설계 항 참고)
     template_name = 'blog/post_all.html'
     # 컨텍스트 객체 이름을 기본값(object_list)와 다르게 지정했지만,
     # 기본값(object_list)도 여전히 사용 가능함
     context_object_name = 'posts'
-    paginate_by = 4  # !!!페이지 당 5 개 객체를 처리하도록 지정!!!
+    paginate_by = 5  # 페이지 당 5 개 객체를 처리하도록 지정
 
 # DetailView를 상속받아서 PostDV 작성
 # 기본키 대신 slug를 전달 받고, 나머지 속성은 기본값 사용
@@ -58,4 +58,3 @@ class PostTAV(TodayArchiveView) :
     date_field = 'modify_date'
     # URLconf에서 지정한 당일(today)에 해당하는 object_list를 구성하고
     # 이를 템플릿에 전달함
-
