@@ -4,7 +4,7 @@
 {% block extrastyle %}{% static 'css/tabular.css' %}{% endblock %}
 {% block content %}
       <div id="content">
-          <h1>블로그 목록 (표 형식)</h1>
+          <h1 class="centered">블로그 목록 (표 형식)</h1>
           <table id="tbl" >
               <tr>
                   <th>번호</th>
@@ -16,10 +16,10 @@
               {% for post in posts %}
               <tr>
                   <td>{{ post.id }}</td>
-                  <td>{{ post.modify_date }}</td>
+                  <td>{{ post.modify_date|date:"Y년 m월 d일" }}</td>
                   <td><a href='{{ post.get_absolute_url }}'>{{ post.title }}</a></td>
                   <td>{{ post.slug }}</td>
-                  <td><p>{{ post.description }}</p></td>
+                  <td>{{ post.description }}</td>
               </tr>
               {% endfor %}
           </table>
@@ -34,13 +34,18 @@
                   {% if page_obj.has_previous %}
                       <!--링크 형식 ?page=1에 주목-->
                       <a href="?page={{ page_obj.previous_page_number }}">이전 페이지</a>
+                  {% else %}
+                      첫 페이지
                   {% endif %}
 
+                  &nbsp;&nbsp; (
                   {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
-
+                  )&nbsp;&nbsp;
                   {% if page_obj.has_next %}
                       <!--링크 형식 ?page=3에 주목-->
                       <a href="?page={{ page_obj.next_page_number }}">다음 페이지</a>
+                  {% else %}
+                      끝 페이지
                   {% endif %}
               </span>
           </div>
