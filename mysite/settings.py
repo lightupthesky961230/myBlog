@@ -46,6 +46,23 @@ INSTALLED_APPS = [
     'tagging.apps.TaggingConfig',  # (ch07) tagging 앱을 추가 등록
 ]
 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'bookmark.apps.BookmarkConfig',     # (ch02) bookmark 앱을 추가 등록
+    'blog.apps.BlogConfig',             # (ch03) blog 앱을 추가 등록
+    'tagging.apps.TaggingConfig',       # (ch07) tagging 앱을 추가 등록
+    'disqus',                           # (ch08) 1/4
+    'django.contrib.sites',             # (ch08) 2/4
+]
+DISQUS_WEBSITE_SHORTNAME = 'lightupthesky'   # (ch08) 3/4 [Website Name]
+SITE_ID = 1                             # (ch08) 4/4 django.contrib.sites를 등
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
