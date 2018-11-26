@@ -16,12 +16,6 @@
         {{ form.as_table }}
         <input type="submit" value="확인" />
     </form>
-     <form action="." method="post" class="centered"> {% csrf_token %}
-
-        <!--form은 뷰가 넘겨준 PostSearchForm을 의미함-->
-        {{ form.as_table }}
-        <input type="submit" value="확인" />
-    </form>
     <br/><br/>
     {% if object_list and search_term %}
         <h2 class="centered">({{ search_term }})에 대한 검색 결과검색 결과</h2>
