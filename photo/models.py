@@ -66,3 +66,5 @@ class Photo(models.Model):
 			upload_date__gt=self.upload_date,
 			).last()
 		return next_photo
+
+
