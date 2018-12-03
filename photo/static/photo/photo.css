@@ -56,5 +56,10 @@ div.clear_float {
     clear: both;
 }
 
-    .c1 { text-align: center;}
-    ul { list-style-type : none; }
+.c1 { text-align: center;}
+ul { list-style-type : none; }
+
+.img-style {
+    width: auto;
+    max-height: 300px;
+}
