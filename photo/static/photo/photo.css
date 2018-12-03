@@ -30,11 +30,14 @@ div.album-detail-photo > li {
 table.photo-detail {
     margin: 30px 50px 0 50px;
     border: 1px solid #ccc;
+    width: 90%;
 }
 
 table.photo-detail td {
     width: 50%;
 }
+
+
 
 table.photo-detail ul li {
     font-weight: bold;
@@ -52,3 +55,6 @@ img.thumbnail {
 div.clear_float {
     clear: both;
 }
+
+    .c1 { text-align: center;}
+    ul { list-style-type : none; }

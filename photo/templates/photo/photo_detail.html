@@ -1,23 +1,41 @@
 {% extends "base.html" %}
 
-{% block title %}photo_detail.html{% endblock %}
+{% block title %}사진{% endblock %}
 
 {% load staticfiles %}
 {% block extrastyle %}{% static "photo/photo.css" %}{% endblock %}
 
 {% block content %}
-<div id="content">
+<div id="content" class="c1">
     <h2>{{ object.title }}</h2>
+    <p class="other_posts">
+     {% if object.get_previous_photo %}
+         <a href="{{ object.get_previous_photo.get_absolute_url }}" title="View previous post">
+             &laquo;-- {{ object.get_previous_photo }}
+         </a>
+     {% else %}
+        첫 번째 사진&nbsp;&nbsp;
+     {% endif %}
+
+     {% if object.get_next_photo %}
+         &nbsp; |
+         <a href="{{ object.get_next_photo.get_absolute_url }}" title="View next post">
+            &nbsp; {{ object.get_next_photo }} --&raquo;
+         </a>
+     {% else %}
+      &nbsp; | &nbsp; 마지막 사진
+     {% endif %}
+   </p>
     <table class="photo-detail">
         <tr>
             <td>
                 <a href="{{ object.image.url }}">
-                    <img style="max-width:100%" src="{{ object.image.url }}" />
+                    <img style="max-width:100%; max-height: 300px" src="{{ object.image.url }}" />
                 </a>
             </td>
             <td>
                 <ul>
-                    <li>설명:</li>
+                    <li>설명</li>
                     {% if object.description %}
                         <p>{{ object.description|linebreaks }}</p>
                     {% else %}

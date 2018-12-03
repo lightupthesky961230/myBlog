@@ -46,6 +46,7 @@ class Post(models.Model):
         # # Example: /post/django-example/
         # url(r'^post/(?P<slug>[-\w]+)/$', PostDV.as_view(), name='post_detail'),
         return reverse('blog:post_detail', args=(self.slug,))
+
     def get_previous_post(self):  # 3.2.5 항에서 템플릿 작성할 때 사용
         return self.get_previous_by_modify_date()
 
